@@ -27,6 +27,10 @@ html {
     @include respond(big-desktop) {
         font-size: 75%;
     }
+
+    @media only screen and (max-width: $bp-large)  {
+        font-size: 50%;
+    }
 }
 
 body {

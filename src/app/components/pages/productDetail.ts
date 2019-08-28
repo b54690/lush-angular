@@ -24,8 +24,9 @@ export class ProductDetailPage implements OnInit, OnDestroy {
     }
 
     public getProduct(id: number): void {
-        this.subscription = this.productService.getProduct(id).subscribe((result) => {
-            this.product = result;
+        this.subscription = this.productService.getProduct(id)
+            .subscribe((result) => {
+                this.product = result;
         });
     }
 
