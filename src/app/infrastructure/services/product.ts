@@ -13,7 +13,7 @@ export class ProductService {
     ) {
     }
 
-    public allProducts(): Observable<Array<Product>> {
+    public getAllProducts(): Observable<Array<Product>> {
         return this.http.get<Product[]>(`${baseUrl}`).map((results) => {
             const products: Array<Product> = [];
 
@@ -35,6 +35,12 @@ export class ProductService {
                 products.push(result);
             });
             return products;
+        });
+    }
+
+    public getProduct(id: number): Observable<Product> {
+        return this.http.get<Product>(`${baseUrl}/${id}`).map((result: Product) => {
+            return result as Product;
         });
     }
 }

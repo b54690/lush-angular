@@ -1,0 +1,17 @@
+<div class="container" *ngIf="product">
+    <header class="header">
+        <app-video-header
+            [video]='product.media.hero_video'
+            [title]='product.title'
+        ></app-video-header>
+        {{ product.body }}
+    </header>
+    <div class="content">
+        <div class="sideBar">
+            SideBar
+        </div>
+        <main class="items">
+            Product items
+        </main>
+    </div>
+</div>

@@ -10,6 +10,10 @@ const routes: Routes = [
     {
         path: 'products',
         loadChildren: './modules/products#ProductsModule',
+    },
+    {
+        path: 'products/:id',
+        loadChildren: './modules/productDetail#ProductDetailModule',
     }
 ];
 

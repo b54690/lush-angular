@@ -10,23 +10,22 @@ import { Subscription } from 'rxjs';
 
 export class ProductsPage implements OnInit, OnDestroy {
     public products: Array<Product>;
+    public product: Product;
     private subscription = new Subscription();
 
     constructor(
         private productService: ProductService
     ) {
-        this.getAllProducts();
+        this.getProducts();
     }
 
     public ngOnInit(): void {
-        this.subscription = this.productService.allProducts()
-        .subscribe((res) => {
-            this.products = res;
-        });
+        this.getProducts();
     }
 
-    private getAllProducts(): void {
-        this.productService.allProducts().subscribe((res) => {
+    private getProducts(): void {
+        this.subscription = this.productService.getAllProducts()
+        .subscribe((res) => {
             this.products = res;
         });
     }
