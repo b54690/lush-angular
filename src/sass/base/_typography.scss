@@ -1,0 +1,48 @@
+.heading-primary {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 15rem;
+    right: 2rem;
+    width: 75%;
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+        top: 11rem;
+        right: 1rem
+    }
+
+    &__span {
+        padding: 0.5rem 1rem;
+        // Sets span over n lines, if the max width of the span is reached //
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        background-image: linear-gradient(to right bottom,
+            rgba($color-secondary-light, .85),
+            rgba($color-secondary-dark, .85)
+        );
+    }
+}
+
+.heading-secondary {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-grey-dark-2;
+    width: 100%;
+}
+
+.heading-tertiary {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: left;
+    color: $color-black;
+    width: 100%;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-more-info',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
 })
 
 export class MoreInfoComponent {
+    @Input() public body: string;
+
     constructor() {
     }
 }

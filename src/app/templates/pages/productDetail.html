@@ -5,14 +5,21 @@
         </header>
         <div class="product-content">
             <div class="product-content__sidebar">
-                <app-side-bar></app-side-bar>
+                <app-side-bar
+                    [averageRating]="product.average_rating"
+                    [averageRatingPercentage]="product.average_rating_percentage.toFixed(0)"
+                ></app-side-bar>
             </div>
             <div class="product-content__detail">
                 <div class="product-content__detail-image">
-                    <app-product-image></app-product-image>
+                    <app-product-image
+                        [image]="product.media.commerce_image"
+                    ></app-product-image>
                 </div>
                 <div class="product-content__detail-moreInfo">
-                    <app-more-info></app-more-info>
+                    <app-more-info
+                        [body]="product.body"
+                    ></app-more-info>
                 </div>
             </div>
         </div>

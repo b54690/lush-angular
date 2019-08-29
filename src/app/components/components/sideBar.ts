@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-side-bar',
@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
 })
 
 export class SideBarComponent {
+    @Input() public title: string;
+    @Input() public averageRatingPercentage: string;
+    @Input() public averageRating: string;
+    @Input() public body: string;
+
     constructor() {
     }
 }

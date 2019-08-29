@@ -1,0 +1,15 @@
+.product-image-card{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+
+    &__image{
+        flex: 0 0 55%;
+        margin: 0 auto;
+        background-size: cover;
+        height: 25rem;
+    }
+}
