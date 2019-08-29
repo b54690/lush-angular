@@ -8,7 +8,4 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons/faSearch';
 
 export class NavBarComponent {
     public faSearch = faSearch;
-
-    constructor() {
-    }
 }

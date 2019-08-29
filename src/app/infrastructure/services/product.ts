@@ -38,7 +38,7 @@ export class ProductService {
         });
     }
 
-    public getProduct(id: number): Observable<Product> {
+    public getProduct(id: string): Observable<Product> {
         return this.http.get<Product>(`${baseUrl}/${id}`).map((result: Product) => {
             return result as Product;
         });

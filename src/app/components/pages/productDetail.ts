@@ -11,11 +11,12 @@ import { ProductService } from '../../infrastructure/services/product';
 export class ProductDetailPage implements OnInit, OnDestroy {
     public product: Product;
     private subscription = new Subscription();
-    private id: number = Number((window.location.href).split('/').pop());
+    private readonly id: string;
 
     constructor(
         private productService: ProductService
     ) {
+        this.id = (window.location.href).split('/').pop();
         this.getProduct(this.id);
     }
 
@@ -23,7 +24,7 @@ export class ProductDetailPage implements OnInit, OnDestroy {
         this.getProduct(this.id);
     }
 
-    public getProduct(id: number): void {
+    public getProduct(id: string): void {
         this.subscription = this.productService.getProduct(id)
             .subscribe((result) => {
                 this.product = result;
