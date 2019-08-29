@@ -1,7 +1,6 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-//@import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
@@ -13,5 +12,5 @@
 
 @import "layout/grid";
 
-@import "pages/productList";
+@import "pages/products";
 @import "pages/productDetail";

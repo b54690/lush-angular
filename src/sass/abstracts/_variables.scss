@@ -5,9 +5,6 @@ $color-primary-dark: #28b485;
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
-
 $color-grey-light-1: #f7f7f7;
 $color-grey-light-2: #eee;
 
@@ -19,10 +16,10 @@ $color-black: #000;
 
 $border: 1px solid $color-grey-dark-2;
 
+// BREAK POINTS //
 $bp-largest: 75em; //1200px
 $bp-large: 68.75em; //1100px
 $bp-medium: 56.25em; //90px
-
 
 // FONT SIZES //
 $default-font-size: 1.6rem;

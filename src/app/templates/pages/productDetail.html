@@ -1,27 +1,20 @@
-<div class="product-container" *ngIf="product">
-    <header class="product-container__header">
-        <app-video-header [video]='product.media.hero_video' [title]='product.title'></app-video-header>
-    </header>
-    <div class="product-container__content">
-        <div class="product-container__content-sidebar">
-            SideBar
-        </div>
-        <div class="product-container__content-detail">
-            <div class="product-container__content-detail-description">
-                <p class="paragraph">
-                    {{ product.body }}
-                </p>
+<section class="section-product-detail">
+    <div class="product-container" *ngIf="product">
+        <header class="product-header">
+            <app-video-header [video]='product.media.hero_video' [title]='product.title'></app-video-header>
+        </header>
+        <div class="product-content">
+            <div class="product-content__sidebar">
+                <app-side-bar></app-side-bar>
             </div>
-
-            <div class="product-container__content-detail-moreInfo">
-                <ul class="product-container__content-detail-moreInfo-list">
-                    <li class="list__item"><strong>{{product.product_type}}</strong></li>
-                    <li class="list__item"><i>{{product.description}}</i></li>
-                    <li class="list__item">{{product.certification}}</li>
-                    <li class="list__item">{{product.average_rating}}</li>
-                    <li class="list__item">{{product.average_rating_percentage}}</li>
-                </ul>
+            <div class="product-content__detail">
+                <div class="product-content__detail-image">
+                    <app-product-image></app-product-image>
+                </div>
+                <div class="product-content__detail-moreInfo">
+                    <app-more-info></app-more-info>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
