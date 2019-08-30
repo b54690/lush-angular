@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Product } from '../../domain/product';
 import { Subscription } from 'rxjs';
 import { ProductService } from '../../infrastructure/services/product';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-product-detail',
@@ -11,16 +12,19 @@ import { ProductService } from '../../infrastructure/services/product';
 export class ProductDetailPage implements OnInit, OnDestroy {
     public product: Product;
     private subscription = new Subscription();
-    private readonly id: string;
+    private id: string;
 
     constructor(
-        private productService: ProductService
+        private productService: ProductService,
+        private route: ActivatedRoute
     ) {
-        this.id = (window.location.href).split('/').pop();
         this.getProduct(this.id);
     }
 
     public ngOnInit(): void {
+        this.route.params.subscribe((result) => {
+            this.id = result.id;
+        });
         this.getProduct(this.id);
     }
 
