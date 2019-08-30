@@ -56,7 +56,6 @@
 
         &-span {
             padding: 0.5rem 1rem;
-            // Sets span over n lines, if the max width of the span is reached //
             box-decoration-break: clone;
             -webkit-box-decoration-break: clone;
             background-image: linear-gradient(to right bottom,
@@ -72,7 +71,6 @@
         ul {
             list-style: none;
             width: 100%;
-            // centers a block within a block//
             margin: 0 auto;
 
             li {
@@ -97,18 +95,18 @@
         text-align: center;
     }
 
-    &__price-box {
+    &__link-box {
         text-align: center;
         color: $color-white;
         margin-bottom: 8rem;
     }
 
-    &__price-only {
+    &__sub-header {
         font-size: 1.5rem;
         text-transform: none;
     }
 
-    &__price-value {
+    &__header {
         font-size: 4.5rem;
         font-weight: 100;
     }

@@ -1,8 +1,8 @@
-<div class="section-products" *ngFor="let product of products">
+<div class="section-products" >
     <div class="row">
-        <div class="col-1-of-5">
+        <div class="col" *ngFor="let product of products">
             <div class="card">
-                <div class="card__side card__side--front">
+                <div class="card__side card__side--front">;
                     <div class="card__picture" [ngStyle]="{'background-image':'url(' + product.media.hero_image + ')'}">
                         &nbsp;
                     </div>
@@ -17,9 +17,9 @@
                 </div>
                 <div class="card__side card__side--back">
                     <div class="card__cta">
-                        <div class="card__price-box">
-                            <p class="card__price-only">Seeing is</p>
-                            <p class="card__price-value">Believing</p>
+                        <div class="card__link-box">
+                            <p class="card__sub-header">Seeing is</p>
+                            <p class="card__header">Believing</p>
                         </div>
                         <a [routerLink]="'/products/' + product.id" class="btn btn--white">
                             Find out more

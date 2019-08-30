@@ -17,7 +17,6 @@
 
     &__span {
         padding: 0.5rem 1rem;
-        // Sets span over n lines, if the max width of the span is reached //
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
         background-image: linear-gradient(to right bottom,
