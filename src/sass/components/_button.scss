@@ -35,7 +35,12 @@
         color: $color-white;
         text-align: center;
         align-items: center;
+        font-size: 1.5rem !important;
         display: block !important;
+
+        @include respond(tab-port) {
+            font-size: 1rem !important;
+        }
 
         &::after {
             background-color: $color-white;

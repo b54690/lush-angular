@@ -1,10 +1,8 @@
 .card {
-    //**Gives a 3D-positioned element some perspective**//
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
-    //*similar to float issue, the height of the parent collapses. To resolve we have to match the parent height to the child height **//
 
     &__side {
         height: 52rem;
@@ -19,7 +17,6 @@
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
         &--front {
-            //background-color: $color-white;
         }
 
         &--back {
@@ -73,7 +70,6 @@
         padding: 1rem;
 
         ul {
-            //removes bullet points//
             list-style: none;
             width: 100%;
             // centers a block within a block//

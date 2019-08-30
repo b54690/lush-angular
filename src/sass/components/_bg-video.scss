@@ -10,9 +10,7 @@
   &__content {
     height: 20rem;
     width: 100%;
-    // object maintains the aspect ratio whilst filling the parent element //
     object-fit: cover;
-    // negative z index ensures element sits in the background
     z-index: -1;
     opacity: .55;
 
