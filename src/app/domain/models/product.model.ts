@@ -1,7 +1,10 @@
 export class Product {
     public id: number;
     public title: string;
-    public media: {};
+    public media: {
+        hero_video: string,
+        commerce_image: string
+    };
     public average_rating: number;
     public average_rating_percentage: number;
     public product_type: string;
@@ -15,7 +18,10 @@ export class Product {
     public constructor(
         id: number,
         title: string,
-        media: {},
+        media: {
+            hero_video: string,
+            commerce_image: string
+        },
         average_rating: number,
         average_rating_percentage: number,
         product_type: string,
