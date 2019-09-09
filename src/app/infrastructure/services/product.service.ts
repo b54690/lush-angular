@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Product } from '../../domain/product';
 import { baseUrl } from '../../config/general';
 import 'rxjs/add/operator/map';
+import { Product } from '../../domain/models/product.model';
 
 @Injectable()
 export class ProductService {
