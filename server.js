@@ -5,7 +5,7 @@ const app = express();
 
 // Serve only the static files form the dist directory
 // app.use(express.static(__dirname,  '/dist/lush-angular'));
-app.use(express.static(__dirname,  null));
+app.use(express.static('./dist/lush-angular'));
 
 app.get('*', function(req,res) {
     res.sendFile(path.join(__dirname, '/dist/lush-angular/index.html'));
