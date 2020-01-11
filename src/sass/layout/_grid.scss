@@ -1,11 +1,13 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 0;
-    width: 100% !important;
+    margin: 1rem 1rem;
 
     @include respond(tab-port) {
         margin: 1rem 0;
+    }
+
+    @include respond(phone) {
         display: contents;
     }
 }
@@ -14,4 +16,10 @@
     align-items: center;
     margin: 1rem;
     flex: 1 0 18.5%;
+
+    @include respond(tab-port) {
+        flex: 1 0 30.5%;
+    }
 }
+
+

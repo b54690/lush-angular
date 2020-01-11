@@ -1,7 +1,7 @@
 <section class="section-product-detail">
     <div class="product-container" *ngIf="product">
         <header class="product-header">
-            <app-video-header [video]='product.media.hero_video' [title]='product.title'></app-video-header>
+            <app-video-header [video]='product.media.hero_video' [title]='product.title' [videoAlt]='product.media.hero_image'></app-video-header>
         </header>
         <div class="product-content">
             <div class="product-content__sidebar">

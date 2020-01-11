@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class VideoHeaderComponent {
     @Input() public video: string;
     @Input() public title: string;
+    @Input() public videoAlt: string;
 }

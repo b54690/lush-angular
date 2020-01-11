@@ -1,3 +1,22 @@
+.heading-title {
+    font-size: 3.5rem;
+    letter-spacing: -0.1rem;
+    margin: 2rem 2rem;
+    line-height: 3.5rem;
+
+    @include respond(tab-port) {
+        margin: 2rem 1rem;
+    }
+}
+
+hr {
+    margin: 2rem 2rem;
+
+    @include respond(tab-port) {
+        margin: 2rem 1rem;
+    }
+}
+
 .heading-primary {
     font-size: 3rem;
     font-weight: 300;
