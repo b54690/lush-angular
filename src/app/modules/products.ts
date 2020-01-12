@@ -4,6 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProductsPage } from '../components/pages/products';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductService } from '../infrastructure/services/product.service';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 const routes: Routes = [
     { path: '', component: ProductsPage }
@@ -13,7 +14,8 @@ const routes: Routes = [
     imports: [
         CommonModule,
         FontAwesomeModule,
-        RouterModule.forChild(routes)
+        RouterModule.forChild(routes),
+        LazyLoadImageModule
     ],
     declarations: [
         ProductsPage

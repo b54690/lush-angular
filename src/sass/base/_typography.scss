@@ -1,8 +1,9 @@
 .heading-title {
-    font-size: 3.5rem;
-    letter-spacing: -0.1rem;
+    font-size: 4.5rem;
+    letter-spacing: -1.3px;
     margin: 2rem 2rem;
     line-height: 3.5rem;
+    padding: 1rem 0;
 
     @include respond(tab-port) {
         margin: 2rem 1rem;

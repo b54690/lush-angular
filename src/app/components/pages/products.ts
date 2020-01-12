@@ -11,6 +11,7 @@ import { ProductService } from '../../infrastructure/services/product.service';
 export class ProductsPage implements OnInit, OnDestroy {
     public products: Array<Product>;
     public product: Product;
+    public defaultImage = 'https://www.placecage.com/1000/1000';
     private subscription = new Subscription();
 
     constructor(

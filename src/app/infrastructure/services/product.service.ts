@@ -30,7 +30,8 @@ export class ProductService {
                     res.certification,
                     res.categories,
                     res.kitchen,
-                    res.preservatives_free
+                    res.preservatives_free,
+                    res.show
                 );
                 products.push(result);
             });

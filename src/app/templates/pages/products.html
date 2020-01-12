@@ -5,7 +5,7 @@
         <div class="col" *ngFor="let product of products">
             <div class="card">
                 <div class="card__side card__side--front">
-                    <div class="card__picture" [ngStyle]="{'background-image':'url(' + product.media.hero_image + ')'}">
+                    <div class="card__picture" [lazyLoad]="product.media.hero_image" [defaultImage]="defaultImage">
                         &nbsp;
                     </div>
                     <h4 class="card__heading"><span class="card__heading-span">{{product.title}}</span></h4>

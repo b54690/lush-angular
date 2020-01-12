@@ -1,7 +1,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 1rem;
+    margin: 3rem 1rem;
 
     @include respond(tab-port) {
         margin: 1rem 0;

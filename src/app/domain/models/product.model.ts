@@ -14,6 +14,7 @@ export class Product {
     public categories: [{}];
     public kitchen: {};
     public preservatives_free: boolean;
+    public show: false;
 
     public constructor(
         id: number,
@@ -30,7 +31,8 @@ export class Product {
         certification: string,
         categories: [{}],
         kitchen: {},
-        preservatives_free: boolean
+        preservatives_free: boolean,
+        show: false
     ) {
         this.id = id;
         this.title = title;
@@ -44,5 +46,6 @@ export class Product {
         this.categories = categories;
         this.kitchen = kitchen;
         this.preservatives_free = preservatives_free;
+        this.show = show;
     }
 }
