@@ -31,7 +31,6 @@ export class ProductDetailPage implements OnInit, OnDestroy {
     public getProduct(id: string): void {
         this.subscription = this.productService.getProduct(id)
             .subscribe((result) => {
-                console.log(result);
                 this.product = result;
         });
     }

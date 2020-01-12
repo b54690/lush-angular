@@ -7,7 +7,7 @@ import { VideoHeaderModule } from './videoHeader';
 import { MoreInfoModule } from './moreInfo';
 import { SideBarModule } from './sideBar';
 import { ProductImageModule } from './productImage';
-import {ProductService} from "../infrastructure/services/product.service";
+import { ProductService } from '../infrastructure/services/product.service';
 
 const routes: Routes = [
     { path: '', component: ProductDetailPage }
