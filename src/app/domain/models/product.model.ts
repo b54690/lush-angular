@@ -3,7 +3,8 @@ export class Product {
     public title: string;
     public media: {
         hero_video: string,
-        commerce_image: string
+        commerce_image: string,
+        hero_image: string
     };
     public average_rating: number;
     public average_rating_percentage: number;
@@ -21,7 +22,8 @@ export class Product {
         title: string,
         media: {
             hero_video: string,
-            commerce_image: string
+            commerce_image: string,
+            hero_image: string
         },
         average_rating: number,
         average_rating_percentage: number,
