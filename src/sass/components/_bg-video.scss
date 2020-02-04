@@ -7,11 +7,12 @@
   overflow: hidden;
 
   &__content {
-    height: 20rem;
+    height: 30rem;
     width: 100%;
     object-fit: cover;
     z-index: -1;
     opacity: .55;
+    border-bottom: 1px solid $color-grey-light-2;
 
     @include respond(tab-port) {
       height: 17.5rem;

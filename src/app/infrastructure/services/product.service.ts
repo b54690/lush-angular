@@ -14,6 +14,7 @@ export class ProductService {
     }
 
     public getAllProducts(): Observable<Array<Product>> {
+
         return this.http.get<Product[]>(`${baseUrl}`).map((results) => {
             const products: Array<Product> = [];
 

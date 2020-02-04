@@ -5,6 +5,7 @@ import { ProductsPage } from '../components/pages/products';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductService } from '../infrastructure/services/product.service';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 const routes: Routes = [
     { path: '', component: ProductsPage }
@@ -15,7 +16,8 @@ const routes: Routes = [
         CommonModule,
         FontAwesomeModule,
         RouterModule.forChild(routes),
-        LazyLoadImageModule
+        LazyLoadImageModule,
+        NgxSpinnerModule
     ],
     declarations: [
         ProductsPage

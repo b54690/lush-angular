@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Product } from '../../domain/models/product.model';
 import { ProductService } from '../../infrastructure/services/product.service';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
     selector: 'app-product-page',
@@ -15,6 +16,7 @@ export class ProductsPage implements OnInit, OnDestroy {
     private subscription = new Subscription();
 
     constructor(
+        private spinner: NgxSpinnerService,
         private productService: ProductService
     ) {
         this.getProducts();
@@ -25,10 +27,12 @@ export class ProductsPage implements OnInit, OnDestroy {
     }
 
     private getProducts(): void {
+        this.spinner.show();
         this.subscription = this.productService.getAllProducts()
             .subscribe((res) => {
                 console.log(res);
                 this.products = res;
+                this.spinner.hide();
         });
     }
 

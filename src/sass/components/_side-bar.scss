@@ -1,3 +1,9 @@
 .section-sideBar{
     background-color: $color-grey-light-2;
 }
+
+.inline-ul,
+.inline-ul > li {
+  display: inline;
+  padding-left: 0;
+}

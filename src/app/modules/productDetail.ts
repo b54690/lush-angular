@@ -8,6 +8,7 @@ import { MoreInfoModule } from './moreInfo';
 import { SideBarModule } from './sideBar';
 import { ProductImageModule } from './productImage';
 import { ProductService } from '../infrastructure/services/product.service';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 const routes: Routes = [
     { path: '', component: ProductDetailPage }
@@ -21,7 +22,8 @@ const routes: Routes = [
         VideoHeaderModule,
         MoreInfoModule,
         SideBarModule,
-        ProductImageModule
+        ProductImageModule,
+        NgxSpinnerModule
     ],
     declarations: [
         ProductDetailPage

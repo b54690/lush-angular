@@ -10,4 +10,7 @@ export class SideBarComponent {
     @Input() public averageRatingPercentage: string;
     @Input() public averageRating: string;
     @Input() public body: string;
+
+    constructor() {
+    }
 }
