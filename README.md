@@ -1,3 +1,8 @@
+## Project deployed using heroku, please see link to see project in full-swing. 
+
+https://aqueous-atoll-66172.herokuapp.com/
+
+
 # LushAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.1.
